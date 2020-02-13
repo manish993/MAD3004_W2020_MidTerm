@@ -11,3 +11,9 @@ class Internet:Bill
 {
     var providerName:String
     var gbUsed:Int
+init(providerName:String,gbUsed:Int)
+{
+    super.init(billId:String, billDate: Date, billType: String)
+    self.providerName=providerName
+    self.gbUsed=gbUsed
+}
