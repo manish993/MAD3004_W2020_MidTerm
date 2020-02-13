@@ -11,7 +11,10 @@ enum Plan
 {
     case weekly,monthly,Annual
 }
-class Mobile
+class Mobile:Bill
 {
-    
-}
+    var manufacturerName:String
+    var plan:Plan
+    var mobileNumber:Int
+    var gbUsed:Int
+    var minutesUsed:Int}
