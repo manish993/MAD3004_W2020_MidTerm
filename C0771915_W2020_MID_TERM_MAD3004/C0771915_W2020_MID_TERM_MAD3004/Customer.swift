@@ -12,9 +12,21 @@ class Customer
     var customerId:String
     var firstname:String
     var lastName:String
-    var fullName:String
+    func fullName() ->String
     {
-        return firstName+lastname
+        let str = firstname + lastName
+        return str
+        
     }
-    init(
+    
+    init(customerId:String,firstname:String,lastName:String)
+    {
+    self.customerId=customerId
+    self.firstname=firstname
+    self.lastName=lastName
+
+    }
+    
+    
+    
 }

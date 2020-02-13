@@ -20,7 +20,7 @@ class Mobile:Bill
    var minutesUsed:Int
     init(manufacturerName:String,plan:Plan,mobileNumber:Int,gbUsed:Int,minutesUsed:Int)
     {
-    super.init(billId:String, billDate: Date, billType: String)
+    super.init(billId:String,billDate:Date,billType:String)
     self.manufacturerName=manufacturerName
     self.plan=plan
     self.mobileNumber=mobileNumber
