@@ -11,7 +11,7 @@ enum BillType
 {
     case Mobile, Internet, Hydro
 }
-class Bill
+class Bill:IDisplay
 {
     var billId:String
     var billDate:Date
