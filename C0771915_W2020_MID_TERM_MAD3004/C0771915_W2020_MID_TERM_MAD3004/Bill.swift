@@ -7,3 +7,10 @@
 //
 
 import Foundation
+class Bill
+{
+    var billId:String
+      var billDate:Date
+      var billType:String
+    //  var totalBill:Int
+      }
