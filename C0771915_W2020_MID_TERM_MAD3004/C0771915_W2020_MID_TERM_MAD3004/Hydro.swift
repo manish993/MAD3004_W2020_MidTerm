@@ -7,9 +7,17 @@
 //
 
 import Foundation
-class Hydro
+class Hydro:Bill
 {
     var agencyName:String
     var unitConsumed:Int
     var pricePerUnit:Int
+     init(agencyName:String,unitConsumed:Int,pricePerUnit:Int)
+{
+    super.init(billId: String, billDate: Date, billType: BillType)
+    self.agencyName=agencyName
+    self.unitConsumed=unitConsumed
+    self.pricePerUnit=pricePerUnit
+    
+}
 }
