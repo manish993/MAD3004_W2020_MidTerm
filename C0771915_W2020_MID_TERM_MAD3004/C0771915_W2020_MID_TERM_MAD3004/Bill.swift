@@ -14,9 +14,10 @@ enum billType
 class Bill
 {
     var billId:String
-      var billDate:Date
-      var billType:billType
-    //  var totalBill:Int
+    var billDate:Date
+    var billType:billType
+    var totalBill:Int
+    
     
     init(billId:String,billDate:Date,billType:billType)
     {
