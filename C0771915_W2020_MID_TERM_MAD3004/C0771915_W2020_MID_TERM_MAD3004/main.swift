@@ -9,4 +9,5 @@
 import Foundation
 
 print("Hello, World!")
-
+var c1=Customer(customerId:"1", firstname: "jshj", lastName: "ikudisud")
+print(c1.fullName())

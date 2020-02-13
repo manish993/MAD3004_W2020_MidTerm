@@ -17,15 +17,15 @@ class Mobile:Bill
     var plan:Plan
     var mobileNumber:Int
     var gbUsed:Int
-   var minutesUsed:Int
-    init(manufacturerName:String,plan:Plan,mobileNumber:Int,gbUsed:Int,minutesUsed:Int)
-    {
-    super.init(billId:String,billDate:Date,billType:String)
-    self.manufacturerName=manufacturerName
+    var minutesUsed:Int
+     init(billId: String, billDate: Date, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:Int,gbUsed:Int,minutesUsed:Int)
+     {
+    self.manufacturerName = manufacturerName
     self.plan=plan
     self.mobileNumber=mobileNumber
     self.gbUsed=gbUsed
     self.minutesUsed=minutesUsed
+    super.init(billId:billId,billDate:billDate,billType:billType)
     }
     override func display() {
         print("Manufacturer is \(self.manufacturerName) ")
