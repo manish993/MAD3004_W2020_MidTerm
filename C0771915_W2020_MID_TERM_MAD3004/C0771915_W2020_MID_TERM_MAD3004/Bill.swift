@@ -20,5 +20,11 @@ class Bill
     self.billDate=billDate
     self.billType=billType
     }
+    func display()
+    {
+     print("Bill id is \(self.billId)")
+     print("Bill Date is \(self.billDate)")
+     print("Bill Type is \(self.billType)")   // print("total bill is \(self.totalBill)")
+    }
     
 }
