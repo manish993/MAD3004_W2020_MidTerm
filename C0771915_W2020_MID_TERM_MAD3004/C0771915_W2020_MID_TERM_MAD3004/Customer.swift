@@ -7,26 +7,31 @@
 //
 
 import Foundation
-class Customer
+class Customer:IDisplay
 {
     var customerId:String
     var firstname:String
     var lastName:String
-    func fullName() ->String
+    var email:String
+    var fullName:String
     {
-        let str = firstname + lastName
-        return str
-        
+        return "\(firstname)\(lastName)"
     }
     
-    init(customerId:String,firstname:String,lastName:String)
+    init(customerId:String,firstname:String,lastName:String,email:String)
     {
     self.customerId=customerId
     self.firstname=firstname
     self.lastName=lastName
-
+    self.email=email
     }
-    
+   func display()
+    {
+     print("customer id:\(self.customerId)")
+     print("customer full Name:\(fullName)")
+    print("customer email:\(email)")
+    }
+     
     
     
 }
