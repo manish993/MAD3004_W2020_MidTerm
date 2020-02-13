@@ -20,9 +20,19 @@ class Mobile:Bill
    var minutesUsed:Int
     init(manufacturerName:String,plan:Plan,mobileNumber:Int,gbUsed:Int,minutesUsed:Int)
     {
+    super.init(billId:String, billDate: Date, billType: String)
     self.manufacturerName=manufacturerName
     self.plan=plan
     self.mobileNumber=mobileNumber
     self.gbUsed=gbUsed
     self.minutesUsed=minutesUsed
+    }
+    override func display() {
+        print("Manufacturer is \(self.manufacturerName) ")
+        print(" Plan is \(self.plan)")
+        print(" Mobile number is \(self.mobileNumber)")
+        print(" GB used \(self.gbUsed)")
+        print(" Minutes used \(self.minutesUsed) ")
 }
+}
+
