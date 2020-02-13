@@ -17,3 +17,9 @@ init(providerName:String,gbUsed:Int)
     self.providerName=providerName
     self.gbUsed=gbUsed
 }
+override func display()
+    {
+        print("Internet provider is \(self.providerName)")
+        print("Internet Gb used is \(self.gbUsed)")
+    }
+}
