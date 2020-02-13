@@ -9,5 +9,12 @@
 import Foundation
 class Customer
 {
-    
+    var customerId:String
+    var firstname:String
+    var lastName:String
+    var fullName:String
+    {
+        return firstName+lastname
+    }
+    init(
 }
