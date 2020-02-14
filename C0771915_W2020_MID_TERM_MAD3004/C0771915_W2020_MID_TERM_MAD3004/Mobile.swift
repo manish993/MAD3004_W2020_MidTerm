@@ -28,7 +28,10 @@ class Mobile:Bill
     self.minutesUsed=minutesUsed
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
-    func totalBill() ->Int
+    func validateMobileNumber()
+    {
+        if mobileNumber.count
+    }    func totalBill() ->Int
     {
         return gbUsed*ratePerGB
         
