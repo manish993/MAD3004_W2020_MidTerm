@@ -41,19 +41,22 @@ class Mobile:Bill
     }
     func totalBill() ->Int
     {
-        return gbUsed*ratePerGB
+       
+        totalBill = gbUsed*ratePerGB
+        return totalBill
         
     }
     override func display()
     {
-        super.display()
+        
         print("--------MOBILE BILL___________")
-        print("Manufacturer name:\(self.manufacturerName) ")
-        print(" Plan :\(self.plan)")
+        super.display()
+        print("Manufacturer name:   \(self.manufacturerName) ")
+        print("Plan:    \(self.plan)")
         validate(value: mobileNumber)
-        print(" GB used :\(self.gbUsed)")
-        print(" Minutes used :\(self.minutesUsed) ")
-        print("Total bill:$\(totalBill())")
+        print("GB used: \(self.gbUsed)")
+        print("Minutes used:    \(self.minutesUsed) ")
+        print("Total bill:  $\(totalBill())")
 }
 }
 

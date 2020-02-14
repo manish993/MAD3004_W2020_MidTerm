@@ -21,15 +21,16 @@ init(providerName:String,gbUsed:Int,billId:String,billDate:Date,billType:BillTyp
 }
     func totalBill() -> Int
     {
-        return gbUsed*ratePerGB
-    }
+        
+            totalBill = gbUsed*ratePerGB
+            return totalBill    }
     
 override func display()
     {
-        print("-------------INTERNET BILL ------------")
+        print("-------------INTERNET BILL -------------")
         super.display()
-        print("Internet provider :\(self.providerName)")
-        print("Internet Gb used :\(self.gbUsed)")
-        print("total bill :\(totalBill())")
+        print("Internet provider:   \(self.providerName)")
+        print("Internet Gb used:    \(self.gbUsed)")
+        print("total bill:  \(totalBill())")
     }
 }

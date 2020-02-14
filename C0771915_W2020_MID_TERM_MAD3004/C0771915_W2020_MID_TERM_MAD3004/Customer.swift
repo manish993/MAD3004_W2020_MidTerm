@@ -13,8 +13,8 @@ class Customer:IDisplay
     var firstname:String
     var lastName:String
     var email:String
-    var totalAmountToPay:Int=0
-    var billToPay=[String:Bill]()
+    var totalBill:Int=0
+    var billToPay=Array<Bill>()
     var fullName:String
     {
         return "\(firstname)\(lastName)"
@@ -29,43 +29,52 @@ class Customer:IDisplay
     }
     
     func isValidEmail(testStr:String) -> Bool {
-        print("validate emilId: \(testStr)")
+        
         let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         let result = emailTest.evaluate(with: testStr)
         return result
     }
-    func addBill(bill:Bill,customerID:String)
+    func addBill(bill:Bill)
     {
-        billToPay.updateValue(bill, forKey: customerID)
+        billToPay.append(bill)
     }
     
-    func calculateTotal()->Int
+   func calculateTotal() ->Int
     {
-        if billToPay.count == 0
-        {
-            print("No bill found with given index")
-        }
+       
         for b in billToPay
         {
-            totalAmountToPay += b.value.totalBill
+            totalBill += b.totalBill
         }
-        return totalAmountToPay
+        return totalBill
     }
+    
     func display()
     {
      print("customer id:\(self.customerId)")
      print("customer full Name:\(fullName)")
-     print("customer email:\(email)")
-     if (isValidEmail(testStr: email))
-     {
-        print("email id:\(self.email)")
-     }
-        else
-     {
-      print("email is not valid")
-     }
-    
+     
+        if isValidEmail(testStr: email)
+        {
+           print("email id:\(self.email)")
+        }
+           else
+        {
+         print("email is not valid")
+        }
+       for b in billToPay
+        {
+            print("==================================")
+            b.display()
+            
+            
+        }
+        print("Total Bill to Pay : \(calculateTotal())")
+        print(" ==================================")
+        
+     //calculateTotal()
+       // allBill()
     }
      
     
