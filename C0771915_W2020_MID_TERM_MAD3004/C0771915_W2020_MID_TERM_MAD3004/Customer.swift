@@ -14,7 +14,7 @@ class Customer:IDisplay
     var lastName:String
     var email:String
     var totalBill:Int=0
-    var billToPay=Array<Bill>()
+    var bills=[String:Bill]()
     var fullName:String
     {
         return "\(firstname)\(lastName)"
@@ -35,23 +35,24 @@ class Customer:IDisplay
         let result = emailTest.evaluate(with: testStr)
         return result
     }
-    func addBill(bill:Bill)
+    func addBill(bill:Bill,Id:String)
     {
-        billToPay.append(bill)
+        bills.updateValue(bill, forKey: Id)
     }
     
    func calculateTotal() ->Int
     {
        
-        for b in billToPay
+        for b in bills
         {
-            totalBill += b.totalBill
+            totalBill += b.value.totalBill
         }
         return totalBill
     }
     
     func display()
     {
+     print("")
      print("customer id:\(self.customerId)")
      print("customer full Name:\(fullName)")
      
@@ -63,20 +64,21 @@ class Customer:IDisplay
         {
          print("email is not valid")
         }
-       for b in billToPay
+       for b in bills
         {
             print("==================================")
-            b.display()
+            b.value.display()
             
             
         }
+         print(" ==================================")
         print("Total Bill to Pay : \(calculateTotal())")
         print(" ==================================")
         
-     //calculateTotal()
-       // allBill()
+    
     }
+}
      
     
     
-}
+
