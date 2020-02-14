@@ -27,12 +27,7 @@ var m2=Mobile(billId: "M02", billDate: Date(), billType: .Mobile, manufacturerNa
 c2.addBill(bill: m2, Id: m2.billId)
 c2.addBill(bill: i2, Id: i2.billId)
 c2.display()
-var customer=Array<Customer>()
-customer.append(c1)
-for c in customer
-{
-    print(c)
-}
+
 
 
 
