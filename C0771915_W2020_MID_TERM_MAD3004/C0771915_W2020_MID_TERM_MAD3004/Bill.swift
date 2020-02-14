@@ -13,23 +13,42 @@ enum BillType
 }
 class Bill:IDisplay
 {
+    
+    
     var billId:String
-    var billDate:Date
+    var billDate:String
     var billType:BillType
     var totalBill=Int()
     
     
-    init(billId:String,billDate:Date,billType:BillType)
+    init(billId:String,billDate:String,billType:BillType)
     {
     self.billId=billId
     self.billDate=billDate
     self.billType=billType
     }
+    func formatDate(date:String)
+    {
+        
+    let dateFormatterGet = DateFormatter()
+    dateFormatterGet.dateFormat = "yyyy-MM-dd"
+
+    let dateFormatterPrint = DateFormatter()
+    dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+
+    if let date = dateFormatterGet.date(from:date) {
+        print("Bill date:\(dateFormatterPrint.string(from: date))")
+    } else {
+       print("There was an error decoding the string")
+    }
+    }
+    
     func display()
     {
      print("Bill id is \(self.billId)")
-     print("Bill Date is \(self.billDate)")
+        formatDate(date:billDate)
      print("Bill Type is \(self.billType)")   // print("total bill is \(self.totalBill)")
     }
     
 }
+

@@ -12,7 +12,7 @@ class Internet:Bill
     var providerName:String
     var gbUsed:Int
     var ratePerGB=20
-init(providerName:String,gbUsed:Int,billId:String,billDate:Date,billType:BillType)
+init(providerName:String,gbUsed:Int,billId:String,billDate:String,billType:BillType)
 {
     
     self.providerName=providerName
@@ -26,6 +26,7 @@ init(providerName:String,gbUsed:Int,billId:String,billDate:Date,billType:BillTyp
     
 override func display()
     {
+        print("-------------INTERNET BILL ------------")
         super.display()
         print("Internet provider :\(self.providerName)")
         print("Internet Gb used :\(self.gbUsed)")

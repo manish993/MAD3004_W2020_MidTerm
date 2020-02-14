@@ -19,7 +19,7 @@ class Mobile:Bill
     var gbUsed:Int
     var minutesUsed:Int
     var ratePerGB=30
-     init(billId: String, billDate: Date, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:Int,gbUsed:Int,minutesUsed:Int)
+     init(billId: String, billDate:String, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:Int,gbUsed:Int,minutesUsed:Int)
      {
     self.manufacturerName = manufacturerName
     self.plan=plan
@@ -31,16 +31,18 @@ class Mobile:Bill
     func totalBill() ->Int
     {
         return gbUsed*ratePerGB
+        
     }
     override func display()
     {
         super.display()
+        print("--------MOBILE BILL___________")
         print("Manufacturer name:\(self.manufacturerName) ")
         print(" Plan :\(self.plan)")
         print(" Mobile number :\(self.mobileNumber)")
         print(" GB used :\(self.gbUsed)")
         print(" Minutes used :\(self.minutesUsed) ")
-        print("Total bill:\(totalBill())")
+        print("Total bill:$\(totalBill())")
 }
 }
 
