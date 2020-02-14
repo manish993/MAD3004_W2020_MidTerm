@@ -28,12 +28,20 @@ class Bill:IDisplay
     self.billType=billType
     }
     
-    
+    static func from(year: Int, month: Int, day: Int) -> Date?
+    {
+      let calendar = Calendar(identifier: .gregorian)
+      var dateComponents = DateComponents()
+      dateComponents.year = year
+      dateComponents.month = month
+      dateComponents.day = day
+      return calendar.date(from: dateComponents)
+    }
     func display()
     {
-     print("Bill id:    \(self.billId)")
-     print("Bill date:  \(self.billDate)")
-     print("Bill Type:  \(self.billType)")
+     print("        Bill id:    \(self.billId)")
+     print("        Bill date:  \(self.billDate)")
+     print("        Bill Type:  \(self.billType)")
     }
     
 }

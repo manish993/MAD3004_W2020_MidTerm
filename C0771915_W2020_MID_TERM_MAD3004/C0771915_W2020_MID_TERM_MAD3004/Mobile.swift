@@ -36,7 +36,7 @@ class Mobile:Bill
         }
         else
         {
-        print("Mobile number:\(self.mobileNumber)")
+        print("     Mobile number:\(self.mobileNumber)")
         }
     }
     func totalBill() ->Int
@@ -49,14 +49,14 @@ class Mobile:Bill
     override func display()
     {
         
-        print("--------MOBILE BILL___________")
+        print("     ----------MOBILE BILL-------------")
         super.display()
-        print("Manufacturer name:   \(self.manufacturerName) ")
-        print("Plan:    \(self.plan)")
+        print("     Manufacturer name:   \(self.manufacturerName) ")
+        print("     Plan:    \(self.plan)")
         validate(value: mobileNumber)
-        print("GB used: \(self.gbUsed)")
-        print("Minutes used:    \(self.minutesUsed) ")
-        print("Total bill:  $\(totalBill())")
+        print("     GB used: \(self.gbUsed)")
+        print("     Minutes used:    \(self.minutesUsed) ")
+        print("     Total bill:  $\(totalBill())")
 }
 }
 

@@ -58,7 +58,7 @@ class Customer:IDisplay
      
         if isValidEmail(testStr: email)
         {
-           print("email id:\(self.email)")
+           print("Email id:\(self.email)")
         }
            else
         {
@@ -66,14 +66,14 @@ class Customer:IDisplay
         }
        for b in bills
         {
-            print("==================================")
+            print("     ==================================")
             b.value.display()
             
             
         }
-         print(" ==================================")
-        print("Total Bill to Pay : \(calculateTotal())")
-        print(" ==================================")
+         print("        ==================================")
+        print("     Total Bill to Pay : \(calculateTotal())")
+        print("         ==================================")
         
     
     }
