@@ -14,7 +14,7 @@ c.display()
 var i=Internet(providerName: "wew", gbUsed: 12, billId: "1", billDate:"2020-11-12", billType: BillType.Internet)
 i.display()
 
-//var m=Mobile(billId: "2", billDate: Date(), billType: .Hydro, manufacturerName: "uyuy", plan: .Annual, mobileNumber: 67555756, gbUsed: 45, minutesUsed: 12)
+var m=Mobile(billId: "2", billDate:"2018-12-3", billType: .Hydro, manufacturerName: "uyuy", plan: .Annual, mobileNumber: "67555756", gbUsed: 45, minutesUsed: 12)
 
-///m.display()
+m.display()
 

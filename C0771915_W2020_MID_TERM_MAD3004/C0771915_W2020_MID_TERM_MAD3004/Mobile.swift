@@ -15,11 +15,11 @@ class Mobile:Bill
 {
     var manufacturerName:String
     var plan:Plan
-    var mobileNumber:Int
+    var mobileNumber:String
     var gbUsed:Int
     var minutesUsed:Int
     var ratePerGB=30
-     init(billId: String, billDate:String, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:Int,gbUsed:Int,minutesUsed:Int)
+     init(billId: String, billDate:String, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:String,gbUsed:Int,minutesUsed:Int)
      {
     self.manufacturerName = manufacturerName
     self.plan=plan
@@ -28,10 +28,18 @@ class Mobile:Bill
     self.minutesUsed=minutesUsed
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
-    func validateMobileNumber()
+    func validate(value: String)
     {
-        if mobileNumber.count
-    }    func totalBill() ->Int
+        if (value.count<10)
+        {
+            print("mobile number not valid")
+        }
+        else
+        {
+        print("Mobile number:\(self.mobileNumber)")
+        }
+    }
+    func totalBill() ->Int
     {
         return gbUsed*ratePerGB
         
@@ -42,7 +50,7 @@ class Mobile:Bill
         print("--------MOBILE BILL___________")
         print("Manufacturer name:\(self.manufacturerName) ")
         print(" Plan :\(self.plan)")
-        print(" Mobile number :\(self.mobileNumber)")
+        validate(value: mobileNumber)
         print(" GB used :\(self.gbUsed)")
         print(" Minutes used :\(self.minutesUsed) ")
         print("Total bill:$\(totalBill())")
