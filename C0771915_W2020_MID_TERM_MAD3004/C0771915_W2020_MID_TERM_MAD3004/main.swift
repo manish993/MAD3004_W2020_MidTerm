@@ -9,5 +9,7 @@
 import Foundation
 
 print("Hello, World!")
-var c1=Customer(customerId:"1", firstname: "jshj", lastName: "ikudisud",email: "jhgsjh")
-print(c1.display())
+var c=Customer(customerId: "1", firstname: "m,anish", lastName: "pawar", email: "jjhdkwj")
+c.display()
+var i=Internet(providerName: "wew", gbUsed: 12, billId: "1", billDate: Date(), billType: BillType.Internet)
+i.display()

@@ -26,8 +26,9 @@ init(providerName:String,gbUsed:Int,billId:String,billDate:Date,billType:BillTyp
     
 override func display()
     {
-        print("Internet provider is \(self.providerName)")
-        print("Internet Gb used is \(self.gbUsed)")
+        super.display()
+        print("Internet provider :\(self.providerName)")
+        print("Internet Gb used :\(self.gbUsed)")
         print("total bill :\(totalBill())")
     }
 }

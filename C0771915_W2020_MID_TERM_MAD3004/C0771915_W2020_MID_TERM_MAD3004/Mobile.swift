@@ -32,12 +32,14 @@ class Mobile:Bill
     {
         return gbUsed*ratePerGB
     }
-    override func display() {
-        print("Manufacturer is \(self.manufacturerName) ")
-        print(" Plan is \(self.plan)")
-        print(" Mobile number is \(self.mobileNumber)")
-        print(" GB used \(self.gbUsed)")
-        print(" Minutes used \(self.minutesUsed) ")
+    override func display()
+    {
+        super.display()
+        print("Manufacturer name:\(self.manufacturerName) ")
+        print(" Plan :\(self.plan)")
+        print(" Mobile number :\(self.mobileNumber)")
+        print(" GB used :\(self.gbUsed)")
+        print(" Minutes used :\(self.minutesUsed) ")
         print("Total bill:\(totalBill())")
 }
 }
