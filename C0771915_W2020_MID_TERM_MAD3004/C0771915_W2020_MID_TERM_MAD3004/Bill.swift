@@ -47,7 +47,7 @@ class Bill:IDisplay
     {
      print("Bill id is \(self.billId)")
         formatDate(date:billDate)
-     print("Bill Type is \(self.billType)")   // print("total bill is \(self.totalBill)")
+     print("Bill Type is \(self.billType)")   
     }
     
 }
