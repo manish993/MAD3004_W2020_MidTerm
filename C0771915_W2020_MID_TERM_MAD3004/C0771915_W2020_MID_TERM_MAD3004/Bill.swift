@@ -16,37 +16,23 @@ class Bill:IDisplay
     
     
     var billId:String
-    var billDate:String
+    var billDate:Date
     var billType:BillType
-    var totalBill=Int()
+    var totalBill:Int=0
     
     
-    init(billId:String,billDate:String,billType:BillType)
+    init(billId:String,billDate:Date,billType:BillType)
     {
     self.billId=billId
     self.billDate=billDate
     self.billType=billType
     }
-    func formatDate(date:String)
-    {
-        
-    let dateFormatterGet = DateFormatter()
-    dateFormatterGet.dateFormat = "yyyy-MM-dd"
-
-    let dateFormatterPrint = DateFormatter()
-    dateFormatterPrint.dateFormat = "MMM dd,yyyy"
-
-    if let date = dateFormatterGet.date(from:date) {
-        print("Bill date:\(dateFormatterPrint.string(from: date))")
-    } else {
-       print("There was an error decoding the string")
-    }
-    }
+    
     
     func display()
     {
      print("Bill id is \(self.billId)")
-        formatDate(date:billDate)
+     print("Bill date\(self.billDate)")
      print("Bill Type is \(self.billType)")   
     }
     

@@ -13,6 +13,8 @@ class Customer:IDisplay
     var firstname:String
     var lastName:String
     var email:String
+    var totalAmountToPay:Int=0
+    var billToPay=[String:Bill]()
     var fullName:String
     {
         return "\(firstname)\(lastName)"
@@ -25,12 +27,30 @@ class Customer:IDisplay
     self.lastName=lastName
     self.email=email
     }
+    
     func isValidEmail(testStr:String) -> Bool {
         print("validate emilId: \(testStr)")
         let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         let result = emailTest.evaluate(with: testStr)
         return result
+    }
+    func addBill(bill:Bill,customerID:String)
+    {
+        billToPay.updateValue(bill, forKey: customerID)
+    }
+    
+    func calculateTotal()->Int
+    {
+        if billToPay.count == 0
+        {
+            print("No bill found with given index")
+        }
+        for b in billToPay
+        {
+            totalAmountToPay += b.value.totalBill
+        }
+        return totalAmountToPay
     }
     func display()
     {
@@ -45,6 +65,7 @@ class Customer:IDisplay
      {
       print("email is not valid")
      }
+    
     }
      
     

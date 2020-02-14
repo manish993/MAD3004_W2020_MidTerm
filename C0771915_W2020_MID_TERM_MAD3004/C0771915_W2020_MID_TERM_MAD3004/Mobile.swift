@@ -19,7 +19,7 @@ class Mobile:Bill
     var gbUsed:Int
     var minutesUsed:Int
     var ratePerGB=30
-     init(billId: String, billDate:String, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:String,gbUsed:Int,minutesUsed:Int)
+     init(billId: String, billDate:Date, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:String,gbUsed:Int,minutesUsed:Int)
      {
     self.manufacturerName = manufacturerName
     self.plan=plan

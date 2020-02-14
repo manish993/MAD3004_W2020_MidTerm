@@ -9,12 +9,16 @@
 import Foundation
 
 print("Hello, World!")
+
+
+
 var c=Customer(customerId: "1", firstname: "m,anish", lastName: "pawar", email: "jjhdkwj")
 c.display()
-var i=Internet(providerName: "wew", gbUsed: 12, billId: "1", billDate:"2020-11-12", billType: BillType.Internet)
+var i=Internet(providerName: "wew", gbUsed: 12, billId: "1", billDate:Date(), billType: BillType.Internet)
 i.display()
 
 var m=Mobile(billId: "2", billDate:"2018-12-3", billType: .Hydro, manufacturerName: "uyuy", plan: .Annual, mobileNumber: "67555756", gbUsed: 45, minutesUsed: 12)
+var h=Hydro(agencyName: "fdgdfg", unitConsumed: 45, pricePerUnit: 1, billId: <#T##String#>, billDate: <#T##Date#>, billType: <#T##BillType#>)
 
 m.display()
 
