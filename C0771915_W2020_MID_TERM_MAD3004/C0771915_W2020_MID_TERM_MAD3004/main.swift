@@ -12,13 +12,13 @@ print("Hello, World!")
 
 
 
-var c=Customer(customerId: "1", firstname: "m,anish", lastName: "pawar", email: "manish@gmail.com")
+var c=Customer(customerId: "c1", firstname: "Manish", lastName: "Pawar", email: "manish@gmail.com")
 ///c.display()
-var i=Internet(providerName: "wew", gbUsed: 12, billId: "1", billDate:Date(), billType: BillType.Internet)
+var i=Internet(providerName:"BSNL", gbUsed: 12, billId:"I01", billDate:Date(), billType: BillType.Internet)
 //i.display()
 
-var m=Mobile(billId: "2", billDate:Date(), billType: .Hydro, manufacturerName: "uyuy", plan: .Annual, mobileNumber: "67555756", gbUsed: 45, minutesUsed: 12)
-var h=Hydro(agencyName: "hgjsdg", unitConsumed: 67, billId: "677556", billDate: Date(), billType: .Hydro)
+var m=Mobile(billId:"M01", billDate:Date(), billType: .Hydro, manufacturerName:"Apple", plan: .Annual, mobileNumber: ",6755577756", gbUsed: 45, minutesUsed: 12)
+var h=Hydro(agencyName:"Steeles Inc", unitConsumed: 67, billId:"H01", billDate: Date(), billType: .Hydro)
 c.addBill(bill: m)
 c.addBill(bill: h)
 c.addBill(bill: i)
