@@ -17,14 +17,7 @@ class Customer:IDisplay
     {
         return "\(firstname)\(lastName)"
     }
-    /*extension String {
-        func isValidEmail() -> Bool{
-       let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-          
-          let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-          return emailTest.evaluate(with:self)
-    }
-    }*/
+    
     init(customerId:String,firstname:String,lastName:String,email:String)
     {
     self.customerId=customerId
@@ -32,14 +25,26 @@ class Customer:IDisplay
     self.lastName=lastName
     self.email=email
     }
-    
-    
+    func isValidEmail(testStr:String) -> Bool {
+        print("validate emilId: \(testStr)")
+        let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let result = emailTest.evaluate(with: testStr)
+        return result
+    }
     func display()
     {
      print("customer id:\(self.customerId)")
      print("customer full Name:\(fullName)")
      print("customer email:\(email)")
-    // print("email is valid?\(email.IsValidEmail())")
+     if (isValidEmail(testStr: email))
+     {
+        print("email id:\(self.email)")
+     }
+        else
+     {
+      print("email is not valid")
+     }
     }
      
     
