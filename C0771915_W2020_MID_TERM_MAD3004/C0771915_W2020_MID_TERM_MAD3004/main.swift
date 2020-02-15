@@ -24,9 +24,12 @@ var m2=Mobile(billId: "M02", billDate: Date(), billType: .Mobile, manufacturerNa
 c2.addBill(bill: m2, Id: m2.billId)
 c2.addBill(bill: i2, Id: i2.billId)
 c2.display()
-
+var c3=Customer(customerId: "c3", firstname: "mohit", lastName: "kumar", email: "mohitkumar@yahoo.com")
+var i=Internet(providerName: "Freedom", gbUsed: 12, billId: "I03", billDate: Date(), billType: .Internet)
+c1.display()
 var customers = Array<Customer>()
     customers.append(c1)
-
+    customers.append(c2)
+    
 
 
