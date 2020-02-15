@@ -30,6 +30,23 @@ c1.display()
 var customers = Array<Customer>()
     customers.append(c1)
     customers.append(c2)
-    
+    customers.append(c3)
+func getCustomerById(id:String)
+{
+    for c in customers
+    {
+        if c.customerId ==  id
+        {
+            print("coustomer is present")
+            print(c.show())
+        }
+    }
+          
+}
+getCustomerById(id: "c3")
+for c in customers
+{
+    print(c.show())
+}
 
 

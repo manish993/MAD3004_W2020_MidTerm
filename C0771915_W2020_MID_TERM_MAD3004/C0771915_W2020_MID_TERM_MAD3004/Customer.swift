@@ -49,7 +49,12 @@ class Customer:IDisplay
         }
         return totalBill
     }
-    
+    func show()
+    {
+        print("     Customer id:\(self.customerId)")
+        print("     Customer full name:\(self.fullName)")
+        print("     Customer email:\(self.email)")
+    }
     
     func display()
     {
