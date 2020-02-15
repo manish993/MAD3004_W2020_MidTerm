@@ -13,18 +13,19 @@ enum Plan
 }
 class Mobile:Bill
 {
-    var manufacturerName:String
-    var plan:Plan
-    var mobileNumber:String
-    var gbUsed:Int
-    var minutesUsed:Int
-    var ratePerGB=30
+  private var manufacturerName:String
+   private var plan:Plan
+   private var mobileNumber:String
+   private var gbUsed:Int
+   private var minutesUsed:Int
+   private var ratePerGB=20
+    private var ratePerMinute=10
      init(billId: String, billDate:Date, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:String,gbUsed:Int,minutesUsed:Int)
      {
     self.manufacturerName = manufacturerName
     self.plan=plan
     self.mobileNumber=mobileNumber
-    self.gbUsed=gbUsed
+        self.gbUsed=gbUsed
     self.minutesUsed=minutesUsed
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
@@ -42,7 +43,7 @@ class Mobile:Bill
     func totalBill() ->Int
     {
        
-        totalBill = gbUsed*ratePerGB
+        totalBill = gbUsed*ratePerGB + minutesUsed*ratePerMinute
         return totalBill
         
     }
@@ -54,8 +55,8 @@ class Mobile:Bill
         print("     Manufacturer name:   \(self.manufacturerName) ")
         print("     Plan:    \(self.plan)")
         validate(value: mobileNumber)
-        print("     GB used: \(self.gbUsed)")
-        print("     Minutes used:    \(self.minutesUsed) ")
+        print("     GB used: \(gbUsed.i())")
+        print("     Minutes used:\(minutesUsed.m())")
         print("     Total bill:  $\(totalBill())")
 }
 }

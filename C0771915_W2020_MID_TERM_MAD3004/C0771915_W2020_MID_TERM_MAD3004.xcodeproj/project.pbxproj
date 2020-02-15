@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B39F4C223F773B700BE3384 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39F4C123F773B700BE3384 /* Extensions.swift */; };
 		9B72D8F223F5F56500FCBD76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72D8F123F5F56500FCBD76 /* main.swift */; };
 		9B72D8F923F5F5E800FCBD76 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72D8F823F5F5E800FCBD76 /* Bill.swift */; };
 		9B72D8FB23F5F70E00FCBD76 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72D8FA23F5F70E00FCBD76 /* IDisplay.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B39F4C123F773B700BE3384 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9B72D8EE23F5F56500FCBD76 /* C0771915_W2020_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0771915_W2020_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B72D8F123F5F56500FCBD76 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B72D8F823F5F5E800FCBD76 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				9B72D8FE23F5F8C500FCBD76 /* Mobile.swift */,
 				9B72D90023F5FCD900FCBD76 /* Hydro.swift */,
 				9B72D90223F5FE7100FCBD76 /* Customer.swift */,
+				9B39F4C123F773B700BE3384 /* Extensions.swift */,
 			);
 			path = C0771915_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				9B72D8FF23F5F8C500FCBD76 /* Mobile.swift in Sources */,
 				9B72D90323F5FE7100FCBD76 /* Customer.swift in Sources */,
 				9B72D8F923F5F5E800FCBD76 /* Bill.swift in Sources */,
+				9B39F4C223F773B700BE3384 /* Extensions.swift in Sources */,
 				9B72D8F223F5F56500FCBD76 /* main.swift in Sources */,
 				9B72D8FD23F5F7B000FCBD76 /* Internet.swift in Sources */,
 				9B72D90123F5FCD900FCBD76 /* Hydro.swift in Sources */,

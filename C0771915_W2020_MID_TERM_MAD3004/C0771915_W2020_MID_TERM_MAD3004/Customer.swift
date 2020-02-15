@@ -10,12 +10,12 @@ import Foundation
 class Customer:IDisplay
 {
     var customerId:String
-    var firstname:String
-    var lastName:String
-    var email:String
+   private var firstname:String
+   private var lastName:String
+   private var email:String
     var totalBill:Int=0
     var bills=[String:Bill]()
-    var fullName:String
+   private var fullName:String
     {
         return "\(firstname)\(lastName)"
     }
@@ -50,11 +50,12 @@ class Customer:IDisplay
         return totalBill
     }
     
+    
     func display()
     {
      print("")
-     print("customer id:\(self.customerId)")
-     print("customer full Name:\(fullName)")
+     print("Customer id:\(self.customerId)")
+     print("Customer full Name:\(fullName)")
      
         if isValidEmail(testStr: email)
         {
@@ -68,8 +69,6 @@ class Customer:IDisplay
         {
             print("     ==================================")
             b.value.display()
-            
-            
         }
          print("     =====================================")
         print("     Total Bill to Pay : \(calculateTotal())")

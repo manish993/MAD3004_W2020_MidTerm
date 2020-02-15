@@ -8,9 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
-
 
 var c1=Customer(customerId: "c1", firstname: "Manish", lastName: "Pawar", email: "manish@gmail.com")
 
@@ -27,6 +24,10 @@ var m2=Mobile(billId: "M02", billDate: Date(), billType: .Mobile, manufacturerNa
 c2.addBill(bill: m2, Id: m2.billId)
 c2.addBill(bill: i2, Id: i2.billId)
 c2.display()
+
+var customers = Array<Customer>()
+    customers.append(c1)
+
 
 
 

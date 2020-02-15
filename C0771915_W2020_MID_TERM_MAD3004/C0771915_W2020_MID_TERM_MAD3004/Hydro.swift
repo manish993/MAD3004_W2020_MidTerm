@@ -9,9 +9,9 @@
 import Foundation
 class Hydro:Bill
 {
-    var agencyName:String
-    var unitConsumed:Int
-    var pricePerUnit:Int=45
+   private var agencyName:String
+   private var unitConsumed:Int
+   private var pricePerUnit:Int=45
     init(agencyName:String,unitConsumed:Int,billId:String,billDate:Date,billType:BillType)
     {
     
@@ -31,7 +31,7 @@ class Hydro:Bill
         print("     ------------HYDRO BILL------------")
         super.display()
         print("     Agency name:\(self.agencyName)")
-        print("     Units consumed:\(self.unitConsumed)")
+        print("     Units consumed:\(unitConsumed.h())")
         print("     Total Bill:$\(totalBill())")
     }
 }

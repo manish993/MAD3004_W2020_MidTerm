@@ -7,6 +7,9 @@
 //
 
 import Foundation
+
+    
+
 enum BillType
 {
     case Mobile, Internet, Hydro
@@ -14,10 +17,9 @@ enum BillType
 class Bill:IDisplay
 {
     
-    
     var billId:String
-    var billDate:Date
-    var billType:BillType
+    private var billDate:Date
+    private var billType:BillType
     var totalBill:Int=0
     
     

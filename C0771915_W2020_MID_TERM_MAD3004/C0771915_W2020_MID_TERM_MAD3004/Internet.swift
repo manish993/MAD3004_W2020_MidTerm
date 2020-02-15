@@ -9,9 +9,9 @@
 import Foundation
 class Internet:Bill
 {
-    var providerName:String
-    var gbUsed:Int
-    var ratePerGB=20
+   private var providerName:String
+   private var gbUsed:Int
+   private var ratePerGB=20
 init(providerName:String,gbUsed:Int,billId:String,billDate:Date,billType:BillType)
 {
     
