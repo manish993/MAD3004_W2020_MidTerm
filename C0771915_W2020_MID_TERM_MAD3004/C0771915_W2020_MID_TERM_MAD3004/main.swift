@@ -30,6 +30,3 @@ var customers = Array<Customer>()
 
 
 
-
-
-
