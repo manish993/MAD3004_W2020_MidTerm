@@ -13,19 +13,19 @@ enum Plan
 }
 class Mobile:Bill
 {
-  private var manufacturerName:String
+   private var manufacturerName:String
    private var plan:Plan
    private var mobileNumber:String
    private var gbUsed:Int
    private var minutesUsed:Int
    private var ratePerGB=20
-    private var ratePerMinute=10
+   private var ratePerMinute=10
      init(billId: String, billDate:Date, billType: BillType,manufacturerName:String,plan:Plan,mobileNumber:String,gbUsed:Int,minutesUsed:Int)
      {
     self.manufacturerName = manufacturerName
     self.plan=plan
     self.mobileNumber=mobileNumber
-        self.gbUsed=gbUsed
+    self.gbUsed=gbUsed
     self.minutesUsed=minutesUsed
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
