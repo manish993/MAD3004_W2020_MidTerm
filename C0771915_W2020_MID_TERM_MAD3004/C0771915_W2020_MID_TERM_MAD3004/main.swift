@@ -59,15 +59,10 @@ func getCustomerById(id:String)
         if c.customerId ==  id
         {
             print("coustomer is present")
-            print(c.show())
+            print(c.display())
         }
-    }
-          
+    }     
 }
 getCustomerById(id: "c3")
-for c in customers
-{
-    print(c.show())
-}
 
 
