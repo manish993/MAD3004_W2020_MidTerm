@@ -4,6 +4,7 @@ used email validation
 added array of customers
 https://stackoverflow.com/questions/27998409/email-phone-validation-in-swift
 https://www.programiz.com/swift-programming/dictionary
+https://www.hackingwithswift.com/books/ios-swiftui/working-with-dates
 https://codewithchris.com/swift-try-catch/
 Creating your own Swift Error type
 If you’d like to define your own error type, you can use an enum and the Error protocol like this:
