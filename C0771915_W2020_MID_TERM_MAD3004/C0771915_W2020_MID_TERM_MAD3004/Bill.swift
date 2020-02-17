@@ -40,7 +40,8 @@ class Bill:IDisplay
     func display()
     {
      print("        Bill id:    \(self.billId)")
-     print("        Bill date:  \(self.billDate)")
+        let date = billDate.formatDate(date: billDate)
+     print("        Bill date:  \(date)")
      print("        Bill Type:  \(self.billType)")
     }
     
