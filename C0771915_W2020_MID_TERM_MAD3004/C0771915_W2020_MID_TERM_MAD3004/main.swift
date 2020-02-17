@@ -54,14 +54,17 @@ var customers = Array<Customer>()
     customers.append(c3)
 func getCustomerById(id:String)
 {
-    for c in customers
+        switch id
     {
-        if c.customerId ==  id
-        {
-            print("coustomer is present")
-            print(c.display())
-        }
-    }     
+        case "c1":
+            c1.display()
+        case "c2":
+            c2.display()
+        case "c3":
+            c3.display()
+        default:
+        print("Customer Not Found.....")
+    }
 }
 getCustomerById(id: "c3")
 
