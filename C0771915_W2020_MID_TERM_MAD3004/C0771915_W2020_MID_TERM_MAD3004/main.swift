@@ -43,14 +43,14 @@ var m2=Mobile(billId: "M02", billDate:dm2!, billType: .Mobile, manufacturerName:
 
 
 var c3=Customer(customerId: "c3", firstname: "mohit", lastName: "kumar", email: "mohitkumar@yahoo.com")
-var i=Internet(providerName: "Freedom", gbUsed: 12, billId: "I03", billDate:di4!, billType: .Internet)
+var i3=Internet(providerName: "Freedom", gbUsed: 12, billId: "I03", billDate:di4!, billType: .Internet)
 
 c1.addBill(bill: m1,Id:m1.billId)
 c1.addBill(bill: h1,Id:h1.billId)
 c1.addBill(bill: i1,Id:i1.billId)
 c2.addBill(bill: m2, Id: m2.billId)
 c2.addBill(bill: i2, Id: i2.billId)
-c3.addBill(bill: i, Id: i.billId)
+c3.addBill(bill: i3, Id: i3.billId)
 //c2.display()
 var customers = Array<Customer>()
     customers.append(c1)
