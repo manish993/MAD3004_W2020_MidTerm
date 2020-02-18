@@ -39,6 +39,7 @@ class Insurance: Bill
         print("\t Start Date : \(date)")
         let date2 = insuranceEndDate.formatDate(date: insuranceEndDate)
         print("\t End Date : \(date2)")
-        print("\t Total Day : \(self.totalDays)")
+        let days = Calendar.current.dateComponents([.day], from: insuranceStartDate,to: insuranceEndDate).day!
+        print("\t Total Day : \(days)")
         print("\t Total Installments : \(self.totalInstallment)")
     }}

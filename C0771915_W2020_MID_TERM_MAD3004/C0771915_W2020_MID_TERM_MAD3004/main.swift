@@ -45,6 +45,9 @@ var m2=Mobile(billId: "M02", billDate:dm2!, billType: .Mobile, manufacturerName:
 var c3=Customer(customerId: "c3", firstname: "mohit", lastName: "kumar", email: "mohitkumar@yahoo.com")
 var i3=Internet(providerName: "Freedom", gbUsed: 12, billId: "I03", billDate:di4!, billType: .Internet)
 
+var i=Insurance(insuranceProvider: "Rogers", insuranceType: .mobile, insuranceStartDate: di5! , insuranceEndDate: di6! , totalInstallment: 12, billId: "m01", billDate: dm1!, billType: .Mobile)
+i.display()
+
 c1.addBill(bill: m1,Id:m1.billId)
 c1.addBill(bill: h1,Id:h1.billId)
 c1.addBill(bill: i1,Id:i1.billId)
