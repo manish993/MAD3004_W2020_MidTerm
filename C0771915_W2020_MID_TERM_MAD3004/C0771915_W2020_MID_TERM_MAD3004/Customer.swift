@@ -39,10 +39,12 @@ class Customer:IDisplay
     {
         bills.updateValue(bill, forKey: Id)
     }
-    
+    func deleteBill(billID:String)
+    {
+        bills.removeValue(forKey: billID)
+    }
    func calculateTotal() ->Int
     {
-       
         for b in bills
         {
             totalBill += b.value.totalBill
