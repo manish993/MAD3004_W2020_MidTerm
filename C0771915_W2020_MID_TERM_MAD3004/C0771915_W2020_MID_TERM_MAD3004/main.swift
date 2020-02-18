@@ -51,25 +51,34 @@ c1.addBill(bill: i1,Id:i1.billId)
 c2.addBill(bill: m2, Id: m2.billId)
 c2.addBill(bill: i2, Id: i2.billId)
 c3.addBill(bill: i, Id: i.billId)
-c2.display()
+//c2.display()
 var customers = Array<Customer>()
     customers.append(c1)
     customers.append(c2)
     customers.append(c3)
-func getCustomerById(id:String)
+print("Do you want to see all customers")
+print("yes or no")
+let choice = readLine()
+if choice == "yes"
 {
-        switch id
-    {
-        case "c1":
-            c1.display()
-        case "c2":
-            c2.display()
-        case "c3":
-            c3.display()
-        default:
+for c in customers{
+    c.display()
+}
+}
+else
+{
+    print("Enter customer id you want to see details of")
+    let c = readLine()
+    
+if c == "c1"
+{
+    c1.display()}
+   else if c == "c2"
+{   c2.display()}
+      else if c == "c3"
+{   c3.display()}
+    else
+{
         print("Customer Not Found.....")
     }
-}
-getCustomerById(id:"c4")
-
-
+    }
