@@ -26,13 +26,14 @@ class Customer:IDisplay
     self.firstname=firstname
     self.lastName=lastName
     self.email=email
+       
     }
     
-    func isValidEmail(testStr:String) -> Bool {
-        
+    func isValidEmail(str:String) -> Bool
+    {
         let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        let result = emailTest.evaluate(with: testStr)
+        let result = emailTest.evaluate(with: str)
         return result
     }
     func addBill(bill:Bill,Id:String)
@@ -64,7 +65,7 @@ class Customer:IDisplay
      print("Customer id:\(self.customerId)")
      print("Customer full Name:\(fullName)")
      
-        if isValidEmail(testStr: email)
+        if isValidEmail(str: email)
         {
            print("Email id:\(self.email)")
         }
@@ -77,7 +78,7 @@ class Customer:IDisplay
             print("     ==================================")
             b.value.display()
         }
-         print("     =====================================")
+        print("     =====================================")
         print("     Total Bill to Pay : \(calculateTotal())")
         print("     ======================================")
         

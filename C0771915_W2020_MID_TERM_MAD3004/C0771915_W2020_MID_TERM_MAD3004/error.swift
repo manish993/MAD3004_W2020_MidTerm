@@ -9,5 +9,5 @@
 import Foundation
 enum errorHandling: Error{
     case novalidNumber
-    case noVlidEmail
+    case noValidEmail
 }
