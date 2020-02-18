@@ -17,6 +17,7 @@
 		9B72D90323F5FE7100FCBD76 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72D90223F5FE7100FCBD76 /* Customer.swift */; };
 		9B97341523FC5DD9008A359D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97341423FC5DD9008A359D /* DateExtension.swift */; };
 		9B97341723FC64C5008A359D /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97341623FC64C5008A359D /* Insurance.swift */; };
+		9B97341923FC6860008A359D /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97341823FC6860008A359D /* error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		9B72D90223F5FE7100FCBD76 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9B97341423FC5DD9008A359D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		9B97341623FC64C5008A359D /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
+		9B97341823FC6860008A359D /* error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				9B39F4C123F773B700BE3384 /* Extensions.swift */,
 				9B97341423FC5DD9008A359D /* DateExtension.swift */,
 				9B97341623FC64C5008A359D /* Insurance.swift */,
+				9B97341823FC6860008A359D /* error.swift */,
 			);
 			path = C0771915_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				9B72D8FF23F5F8C500FCBD76 /* Mobile.swift in Sources */,
 				9B72D90323F5FE7100FCBD76 /* Customer.swift in Sources */,
 				9B72D8F923F5F5E800FCBD76 /* Bill.swift in Sources */,
+				9B97341923FC6860008A359D /* error.swift in Sources */,
 				9B39F4C223F773B700BE3384 /* Extensions.swift in Sources */,
 				9B97341523FC5DD9008A359D /* DateExtension.swift in Sources */,
 				9B72D8F223F5F56500FCBD76 /* main.swift in Sources */,

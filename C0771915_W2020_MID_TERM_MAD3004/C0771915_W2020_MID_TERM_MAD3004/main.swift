@@ -39,7 +39,7 @@ var h1=Hydro(agencyName:"Steeles Inc", unitConsumed: 67, billId:"H01", billDate:
 
 var c2=Customer(customerId: "c2", firstname: "Raj", lastName: "kumar", email: "rajkumar@gmail.com")
 var i2=Internet(providerName: "Rogers", gbUsed: 12, billId: "I02", billDate:di6!, billType: .Internet)
-var m2=Mobile(billId: "M02", billDate:dm2!, billType: .Mobile, manufacturerName: "Samsung", plan: .monthly, mobileNumber: "1234598765", gbUsed: 12, minutesUsed: 13)
+var m2=Mobile(billId: "M02", billDate:dm2!, billType: .Mobile, manufacturerName: "Samsung", plan: .monthly, mobileNumber: "+876543212", gbUsed: 12, minutesUsed: 13)
 
 
 var c3=Customer(customerId: "c3", firstname: "mohit", lastName: "kumar", email: "mohitkumar@yahoo.com")
@@ -51,6 +51,7 @@ c1.addBill(bill: i1,Id:i1.billId)
 c2.addBill(bill: m2, Id: m2.billId)
 c2.addBill(bill: i2, Id: i2.billId)
 c3.addBill(bill: i, Id: i.billId)
+c2.display()
 var customers = Array<Customer>()
     customers.append(c1)
     customers.append(c2)

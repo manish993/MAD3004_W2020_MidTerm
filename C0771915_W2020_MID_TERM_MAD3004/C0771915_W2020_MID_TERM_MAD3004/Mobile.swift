@@ -30,15 +30,19 @@ class Mobile:Bill
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
     func validate(value: String)
-    {
-        if (value.count<10)
         {
-            print("mobile number not valid")
+        let PHONE_REGEX = "^((\\+)|(00))[0-9]{6,14}$"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result =  phoneTest.evaluate(with: value)
+        if result == true
+        {
+            print("     Mobile number is\(mobileNumber)")
         }
         else
         {
-        print("     Mobile number:\(self.mobileNumber)")
+            print("     mobile number not valid")
         }
+        
     }
     func totalBill() ->Int
     {

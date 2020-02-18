@@ -7,6 +7,16 @@
 //
 
 import Foundation
-enum InsuranceType{
-    case mobile, home
-}
+//enum InsuranceType{
+//    case mobile, home
+//}
+//class Insurance: Bill
+//{
+ //   var insuranceProvider:String
+   // var insuranceType:InsuranceType
+   // var insuranceStartDate:Date
+    //var insuranceEndDate: Date
+    ///var totalDays: Int
+   /// var totalInstallment: Double
+    
+    //init(insuranceProvider:String,insuranceType:InsuranceType,insuranceStartDate:Date,insuranceEndDate: Date,
