@@ -20,11 +20,11 @@ class Hydro:Bill
   //  self.pricePerUnit=pricePerUnit
     super.init(billId:billId,billDate:billDate, billType: billType)
     }
-    func totalBill() ->Int
+    func totalBill() ->String
     {
         
         totalBill = unitConsumed*pricePerUnit
-        return totalBill
+        return totalBill.b()
     }
     override func display()
     {
@@ -32,7 +32,7 @@ class Hydro:Bill
         super.display()
         print("     Agency name:\(self.agencyName)")
         print("     Units consumed:\(unitConsumed.h())")
-        print("     Total Bill:$\(totalBill())")
+        print("     Total Bill:\(totalBill())")
     }
 }
 

@@ -42,11 +42,11 @@ class Mobile:Bill
         }
         
     }
-    func totalBill() ->Int
+    func totalBill() ->String
     {
        
         totalBill = gbUsed*ratePerGB + minutesUsed*ratePerMinute
-        return totalBill
+        return totalBill.b()
         
     }
     override func display()
@@ -59,7 +59,7 @@ class Mobile:Bill
         validate(value: mobileNumber)
         print("     GB used: \(gbUsed.i())")
         print("     Minutes used:\(minutesUsed.m())")
-        print("     Total bill:  $\(totalBill())")
+        print("     Total bill:  \(totalBill())")
 }
 }
 
