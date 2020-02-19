@@ -31,16 +31,14 @@ class Mobile:Bill
     }
     func validate(value: String)
         {
-        let PHONE_REGEX = "^((\\+)|(00))[0-9]{6,14}$"
-        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
-        let result =  phoneTest.evaluate(with: value)
-        if result == true
+        
+            if value.count == 10
         {
-            print("     Mobile number is\(mobileNumber)")
+            print("     Mobile number :\(mobileNumber)")
         }
         else
         {
-            print("     mobile number not valid")
+            print("     Mobile number not valid")
         }
         
     }
