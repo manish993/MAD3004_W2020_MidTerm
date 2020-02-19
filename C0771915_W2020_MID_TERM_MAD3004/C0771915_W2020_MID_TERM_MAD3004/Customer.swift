@@ -74,11 +74,16 @@ class Customer:IDisplay
         {
          print("email is not valid")
         }
-       for b in bills
+        if bills.isEmpty
+        {
+            print(" There are not any bils to pay")
+        }
+        else{
+            for b in bills
         {
             print("     ==================================")
             b.value.display()
-        }
+        }}
         print("     =====================================")
         print("     Total Bill to Pay : \(calculateTotal())")
         print("     ======================================")
