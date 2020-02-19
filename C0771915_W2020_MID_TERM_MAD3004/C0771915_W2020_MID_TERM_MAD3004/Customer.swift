@@ -44,6 +44,7 @@ class Customer:IDisplay
     {
         bills.removeValue(forKey: billID)
     }
+    
    func calculateTotal() ->Int
     {
         for b in bills

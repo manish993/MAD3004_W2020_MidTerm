@@ -46,7 +46,7 @@ var c3=Customer(customerId: "c3", firstname: "mohit", lastName: "kumar", email: 
 var i3=Internet(providerName: "Freedom", gbUsed: 12, billId: "I03", billDate:di4!, billType: .Internet)
 
 var i=Insurance(insuranceProvider: "Rogers", insuranceType: .mobile, insuranceStartDate: di5! , insuranceEndDate: di6! , totalInstallment: 12, billId: "m01", billDate: dm1!, billType: .Mobile)
-i.display()
+//i.display()
 
 c1.addBill(bill: m1,Id:m1.billId)
 c1.addBill(bill: h1,Id:h1.billId)
@@ -59,6 +59,7 @@ var customers = Array<Customer>()
     customers.append(c1)
     customers.append(c2)
     customers.append(c3)
+
 print("Do you want to see all customers")
 print("yes or no")
 let choice = readLine()
@@ -85,3 +86,21 @@ if c == "c1"
         print("Customer Not Found.....")
     }
     }
+var bill = Array<Bill>()
+bill.append(m1)
+bill.append(m2)
+bill.append(i3)
+bill.append(h1)
+bill.append(i1)
+bill.append(i2)
+func getBillByBillId(id:String)
+{
+    for m in bill
+    {
+        if m.billId == id
+        {
+        m.display()
+        }
+    }
+}
+getBillByBillId(id:"M01")
